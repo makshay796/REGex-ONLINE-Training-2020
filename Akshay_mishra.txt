@@ -1,0 +1,33 @@
+Q1. Why USERADD command not add the user in home ?
+Ans. USERADD is not user friendly and interactive, and it only create the username but user password, home directory, and the extra information we have to add all the things manually.
+
+Q2. when we create a user some hidden files are generated in the same user at that time how it is done ?
+Ans. Hidden files are distinguishable from other files by the fact that their filenames begin with a dot (.)
+We can acsses these files by -a.
+These files are created to store cache, bash_history, profile, local and etc.
+
+Q3. Make sub directories inside a parent directory by using simple mkdir command.
+Ans. mkdir -p A/B/C
+
+Q4. 
+Ans. step 1. sudo gedit ~/.bashrc
+step 2. Search for umask
+
+step 3. If present change the current value to umask 022
+
+step 4. Save and exit
+
+step 5. If not present, add the following line to end of document
+
+step 6. umask 022
+Save and exit
+
+Now logout and login
+
+Reopen terminal and type
+
+umask
+You will get
+
+0022
+
