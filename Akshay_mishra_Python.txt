@@ -1,0 +1,118 @@
+                                                                    PYTHON CLASS 1
+
+Q1. What is JPython & CPython ?
+Ans. Cpython -->  CPython is the reference implementation of the Python programming language. Written in C and Python, CPython is the default and most widely used implementation of the language. CPython can be defined as both an interpreter and a compiler as it compiles Python code into bytecode before interpreting it.
+
+Jpython  -->  Jython is a Java implementation of Python that combines expressive power with clarity. Jython is freely available for both commercial and non-commercial use and is distributed with source code under the PSF License v2.
+
+Q2. Basic difference between Python2 & python3 ?
+Ans. Python2 -->  Python 2 made code development process easier than earlier versions. It implemented technical details of Python Enhancement Proposal (PEP). Python 2.7 (last version in 2.x ) is no longer under development and in 2020 will be discontinued.
+
+Python3 -->  On December 2008, Python released version 3.0. This version was mainly released to fix problems which exist in Python 2. The nature of these change is such that Python 3 was incompatible with Python 2. It is backward incompatible Some features of Python 3 have been backported to Python 2.x versions to make the migration process easy in Python 3.
+
+Q3. Difference between ASCII & unicode ?
+Ans. ASCII defines 128 characters, which map to the numbers 0–127. Unicode defines (less than) 221 characters, which, similarly, map to numbers 0–221 (though not all numbers are currently assigned, and some are reserved).
+
+Unicode is a superset of ASCII, and the numbers 0–127 have the same meaning in ASCII as they have in Unicode. For example, the number 65 means "Latin capital 'A'".
+
+Because Unicode characters don't generally fit into one 8-bit byte, there are numerous ways of storing Unicode characters in byte sequences, such as UTF-32 and UTF-8.
+
+                                                                 PYTHON CLASS 2
+
+Q1. What should be the output? ( 3 + 4 ** 6 - 9 * 10 / 2 ) ?
+Ans. 4054.0
+
+Q2. Let say I have, some string "hello this side regex"
+● Find out the count of the total vowels 
+○ vowels - ['a','e','i','o','u']
+
+Ans. 7
+
+Q3. Find out the area of triangle
+- 1/2 * b * h (formula of area)
+- You have to take value from user about the base, & the height
+
+Ans. print(0.5*int(input("base"))*int(input("height")))
+
+base5
+height4
+10.0
+
+
+                                                          PYTHON CLASS 3
+ 
+
+Q1. Find the Armstrong Number between the two numbers which are input by user
+○ Armstrong number : 153 -> 1*1*1 + 5*5*5 + 3*3*3
+
+def arm(start, stop):
+    for i in range(start, stop+1):
+        ok = 0
+        num = i
+        while(num != 0):
+            rem = num % 10
+            ok = ok + rem**3
+            num = num // 10
+        if (i == ok):
+            print(i)
+
+
+arm(10, 2000)
+
+153
+370
+371
+407
+
+Q2. Let’s say you have a string “hello this world @2020!!! ”
+○ Remove the punctuation like [“@!#$%&*()”] from the string
+■ Final output should be without the punctuation
+● “hello this world 2020”
+
+Ans. s =  “hello this world @2020!!! ”
+     remove = [“@!#$%&*()”]
+     for i in remove[0]:
+     	s = s.replace(i,"")
+     print(s)
+      
+     "hello this world 2020"
+
+
+Q4. You have a list with words - [“Apple”, “banana”, “cat”, “REGEX”,”apple”]
+○ Sort words in Alphabetical order
+■ If you get output, like [Apple, apple, banana]
+● How has it happened?
+
+Ans. s = ['Apple', 'banana', 'cat', 'REGEX','apple']
+     s.sort()
+     
+print(s)
+
+       ['Apple', 'REGEX', 'apple', 'banana', 'cat']
+
+because upper case have heigher precidency
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
